@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+	
+	<style>
+	
+	body{
+	 background-color:#F0E3E6;
+	}
+	h1{
+	 text-align:center;
+	}
+	.calculator{
+	    width:290px;
+		height:320px;
+		background-color:grey;
+		border:solid black;
+		content-align:center;
+		margin-left:600px;
+		margin-top:100px;
+	}
+	
+	.calculator input{
+	  width:90%;
+	  color:white;
+	  font-size:20px;
+	  text-align:right;
+	  padding:13px;
+	  margin-bottom:10px;
+	  background-color:#3B3238;
+	}
+	.calculator button{
+	  width:23%;
+	  height:40px;
+	  font-size:18px;
+	  font-family:bold;
+	  margin-bottom:9px;
+	  margin-left:1px;
+	  content-align:center;
+	  background:rga(255,255,0.5);
+	  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+	  border-radius:10px;
+	}
+	.calculator button:hover{
+	background-color:#D9D9D9;
+	}
+	</style>
+	
+</head>
+ <body>
+    <h1>Calculator</h1>
+	<div class = "calculator">
+	  <input type = "text" id = "display" disabled/> <!--disabled se ham input type pe click nahi kar payenge-->
+	
+	  <button onclick ="clearDisplay()">AC</button>
+	  <button onclick ="selectOp('.')">.</button>
+	  <button onclick ="selectOp('%')">%</button>
+	  <button onclick ="selectOp('^')">^</button>
+     
+	  
+   	  <button onclick ="appendToDisplay('7')">7</button>
+	  <button onclick ="appendToDisplay('8')">8</button>
+	  <button onclick ="appendToDisplay('9')">9</button>
+	  <button onclick ="selectOp('+')">+</button>
+	  
+	  <button onclick ="appendToDisplay('4')">4</button>
+	  <button onclick ="appendToDisplay('5')">5</button>
+	  <button onclick ="appendToDisplay('6')">6</button>
+	  <button onclick ="selectOp('-')">-</button>
+	  
+	  <button onclick ="appendToDisplay('1')">1</button>
+	  <button onclick ="appendToDisplay('2')">2</button>
+	  <button onclick ="appendToDisplay('3')">3</button>
+	  <button onclick ="selectOp('*')">x</button>
+	  
+	  <button onclick ="clearDisplay()">Clear</button>
+	  <button onclick ="appendToDisplay('0')">0</button>
+	  
+	  <button onclick ="calculateResult()">=</button>
+	  <button onclick ="selectOp('/')">/</button>
+	  
+	</div>
+	<script src = "calcy.js"></script>
+ </body>
+</html> 
