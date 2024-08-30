@@ -1,0 +1,106 @@
+
+body, h1, h2, p, input,textarea,button{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Aparajita;
+     }
+
+body {
+    background-color:#0c1022;
+    display:flex;
+    flex-direction:column;
+     height:100px;
+     padding:20px;
+}
+
+   header{
+    text-align:center;
+    margin-bottom:20px;
+   }
+
+header h1{
+    font-size:32px;
+    color:#f06;
+}
+
+main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+ .contact-form-container{
+    background-color:#fff;
+    padding:30px;
+    border-radius:8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width:500px;
+    width:100%;
+}
+
+.contact-form h2{
+    margin-bottom:20px;
+    font-size:24px;
+    color:#3cf;
+    text-align:center;
+}
+
+.dbody{
+    margin-bottom:15px;
+}
+
+
+.dbody label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+    color:#004d40;
+}
+
+.dbody input,.dbody textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #b2ebf2; 
+    border-radius:4px 20px;
+    font-size:16px;
+    color:#004d40;
+    background-color:#e0f2f1;
+    transition:border-color 0.3s;
+}
+
+.dbody input:focus,.dbody textarea:focus {
+    border-color:#00838f;
+    outline:none;
+}
+
+.dbody button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color:#00796b;
+    border: none;
+    border-radius:4px;
+    color: #fff;
+    font-size:16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dbody button:hover {
+    background-color:#004d40; 
+}
+
+ footer{
+    width:100%; 
+    text-align:center;
+	background-color:#263E4C;
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:100;
+	align-content:center;
+	color:#3cf;
+	font-size:20px;	
+    padding:20px;			
+}
