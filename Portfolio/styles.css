@@ -50,7 +50,7 @@ body{
 .navbar a.active {
     background: linear-gradient(45deg, #f06, #3cf);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
 }
 .navbar a:hover{
 	background:linear-gradient(45deg, #f06,#3cf);
@@ -152,16 +152,14 @@ body{
 	position:relative;
 }
 .home-sc a::before{
-	content:'';
 	position:absolute;
 	width:100%;
 	height:100%;
 	background:linear-gradient(45deg,#f06,#3cf);
 	border-radius:50%;
-	transform: scale(.88);
+	transform: scale(.88);/* Transform property se element ko scale ya size change kiya jata hai. scale(0.88) ka matlab hai ki element apni original size se 88% ho jayega*/
 	z-index:-1;
 	transition: .5s ease;
-	 
 	 
 }
 .home-sc a:hover::before{
@@ -216,7 +214,7 @@ body{
 	border-radius:50%;
 }
 .glowing-circle span:nth-child(1){
-	filter:blur(10px);
+	filter:blur(10px); /* Yeh filter element ko blur karta hai. 3px ka matlab hai ki element ko 3 pixels tak blur kiya jayega*/
 }
 .glowing-circle .image{
 	position:relative;
