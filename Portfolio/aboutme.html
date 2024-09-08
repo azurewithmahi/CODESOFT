@@ -6,19 +6,60 @@
 * {
     margin:0;
     padding:0; 
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color:#0c1022;
+    
 }
 
 .header{ 
    padding:15px;
    text-align:center;
-   background-color:#0c1022;
+   background-color:#282b38;
    color:#3cf;
    font-weight:bold;
    font-size:23px;
    margin-bottom:15px;
 }
-.header:hover{
-   background:#263E4C;
+.head1{
+	display:flex;
+   margin-left: 450px;
+   position:fixed;
+	justify-content:space-between;
+   background:transparent;	
+	align-items:center;
+	z-index:100;
+}
+.navbar {
+    position: fixed;
+    padding-bottom:10px;
+}
+
+.navbar a{
+	text-decoration:none;
+	color:#fff;
+	font-weight:500;
+	font-size:18px;
+	margin-left:35px;
+}
+
+.navbar a.active {
+    background: linear-gradient(45deg, #f06, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+}
+.navbar a:hover{
+	background:linear-gradient(45deg, #f06,#3cf);
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+}
+
+h1{
+   padding: 28px;
+   margin-top: 10px;
 }
 div{
    text-align:center;
@@ -44,7 +85,7 @@ span{
 }
 
 p{
-  font-size:18px;
+  font-size:15px;
   text-align:justify;
   line-height:1.6;
   color:#fff;
@@ -72,14 +113,14 @@ p{
 .ubody{
    text-align:justify;
    padding:10px;
-   font-size:18px;
+   font-size:15px;
    color: #fff;
    line-height:1.6;   
 }
   footer{
-    width:100%; 
-    text-align:center;
-	background-color:#263E4C;
+   width:100%; 
+   text-align:center;
+	background-color:#282b38;
 	position:fixed;
 	bottom:0;
 	left:0;
@@ -95,14 +136,23 @@ p{
     <body>
        <div class="header">
        <h1>ABOUT ME</h1>
+       <header class="head1">
+       <nav class = "navbar">
+          <a href="index.html" class="active">Home</a>
+         <a href="aboutme.html">About</a>
+         <a href="Skill.html">Skill</a>
+         <a href="project.html">Project</a>
+         <a href="My Resume.pdf">Resume</a>
+         <a href="contact_me.html">Contact</a>
+      </nav>  
+      </header>
 	   </div>
 	    <div>
 	    <h2>Hey, I'm Mahima Patel</h2>
 	       <p>Hi, I am a <span>front end web developer</span> and I
 	        like coding a lot and coding is one of my hobbies.
 	        I want to become a successful software engineer,
-	        I like coding so much that it is like a passion to do it 
-	        all day. I have also done certification in this field,
+	        I have also done certification in this field,
 	        I have mentioned it in my resume, you can see my resume
 	        on this website, and I am a good problem solver, good learner
 	        and hard working. ........<i><u> Right now I am taking full stack web
