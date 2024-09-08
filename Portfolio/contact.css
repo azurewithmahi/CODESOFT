@@ -21,7 +21,7 @@ body {
 
 header h1{
     font-size:32px;
-    color:#f06;
+    color:#3cf;
 }
 
 main{
@@ -43,7 +43,7 @@ main{
 .contact-form h2{
     margin-bottom:20px;
     font-size:24px;
-    color:#3cf;
+    color:#f06;
     text-align:center;
 }
 
@@ -92,9 +92,9 @@ main{
 }
 
  footer{
-    width:100%; 
-    text-align:center;
-	background-color:#263E4C;
+       width:100%; 
+       text-align:center;
+        background-color:#282b38;
 	position:fixed;
 	bottom:0;
 	left:0;
@@ -102,5 +102,5 @@ main{
 	align-content:center;
 	color:#3cf;
 	font-size:20px;	
-    padding:20px;			
+        padding:20px;			
 }
