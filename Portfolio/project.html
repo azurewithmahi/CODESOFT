@@ -3,98 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <title>My Projects</title>
-     <style type="text/css">
-*{
-  margin:0;
-  padding:0;
+    <style type="text/css">
+    
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
- body {
-    background-color:#0c1022;
-    color:#fff;
+body {
+    background-color: #0c1022;
+    color: #fff;
 }
-        
+
+.header {
+    padding: 48px;
+    text-align: center;
+    background-color: #282b38;
+    color: #3cf;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.head1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 45px 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 35px;
+}
+
+.navbar a.active {
+    background: linear-gradient(45deg, #f06, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.navbar a:hover {
+    background: linear-gradient(45deg, #f06, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.header h1 {
+    margin-top: 0;
+    color: #3cf;
+    font-size: 40px;
+}
+
 .projects-sec {
-     padding:50px 10%;
-     text-align:center;
+    padding: 50px 10%;
 }
 
- .projects-sec h1 {
-     color:#f06;
-     font-size:36px;
-     margin-bottom:30px;
+.projects-cont {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
 }
 
- .projects-cont {
-     display:grid;
-     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-     gap:20px;
+.proj-card {
+    background-color: #263e4c;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
- .proj-card {
-      background-color:#263e4c;
-      padding:20px;
-      border-radius:10px;
-      transition:transform 0.3s ease;
+.proj-card:hover {
+    transform: translateY(-10px);
 }
-
- .proj-card:hover {
-      transform:translateY(-10px);
- }
 
 .proj-card h2 {
-       font-size:24px;
-       margin-bottom:10px;
-       color:#3cf;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .proj-card a {
-      display:inline-block;
-      margin-top:10px;
-      padding:10px 20px;
-      background-color:#f06;
-      color:#fff;
-      text-decoration:none;
-      border-radius:5px;
-      transition:background-color 0.3s ease;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    color: #f06;
 }
 
- .proj-card a:hover {
-      background-color:#3cf;
- }
- footer{
-    width:100%; 
-    text-align:center;
-	background-color:#263E4C;
-	position:fixed;
-	bottom:0;
-	left:0;
-	z-index:100;
-	align-content:center;
-	color:#3cf;
-	font-size:20px;	
-    padding:20px;			
+footer {
+    width: 100%;
+    text-align: center;
+    background-color:#282b38;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    color: #3cf;
+    font-size: 20px;
+    padding: 20px;
 }
-</style>
+
+     
+    </style>
 </head>
 <body>
+    <div class="header">
+        <h1>MY PROJECTS</h1>
+    </div>
+    <header class="head1">
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="Skill.html">Skill</a>
+            <a href="project.html">Project</a>
+            <a href="My Resume.pdf">Resume</a>
+            <a href="contact_me.html">Contact</a>
+        </nav>
+    </header>
     <section class="projects-sec">
-        <h1>My Projects</h1>
         <div class="projects-cont">
-            <div class="project-card">
+            <div class="proj-card">
                 <h2><a href="index.html" target="_blank">Portfolio Website</a></h2>
             </div>
-            <div class="project-card">
+            <div class="proj-card">
                 <h2><a href="local Time_project.html" target="_blank">Local Timer</a></h2>
             </div>
-            <div class="project-card">
+            <div class="proj-card">
                 <h2><a href="calcy.html" target="_blank">Simple Calculator</a></h2>
             </div>
-            <div class="project-card">
+            <div class="proj-card">
                 <h2><a href="Weather-project.html" target="_blank">Weather App</a></h2>
             </div>
         </div>
     </section>
-	<footer><b>All right reserved</b></footer>
+    <footer><b>All rights reserved</b></footer>
 </body>
 </html>
