@@ -15,21 +15,68 @@ body {
     background-color:#0c1022;
     color:#fff;
 }
-.skills-sec{
+
+.header{ 
+   padding:37px;
+   text-align:center;
+   background-color:#282b38;
+   color:#3cf;
+   font-weight:bold;
+   font-size:23px;
+}
+.head1{
+	display:flex;
+    margin-left: 450px;
+    position:fixed;
+	justify-content:space-between;
+    background:transparent;	
+	align-items:center;
+	z-index:100;
+}
+
+.navbar {
+    position: fixed;
+    padding-top: 30px;
+}
+
+.navbar a{
+	text-decoration:none;
+	color:#fff;
+	font-weight:500;
+	font-size:18px;
+	margin-left:35px;
+}
+
+.navbar a.active {
+    background: linear-gradient(45deg, #f06, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+}
+.navbar a:hover{
+	background:linear-gradient(45deg, #f06,#3cf);
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+}
+
+
+.skills-sec .skills-cont{
     padding:50px 10%;
     text-align:center;
 }
 
-.skills-sec h1{
-     color:#f06;
-     font-size:36px;
-     margin-bottom:30px;
+h1{
+    padding: 10px;
+    margin-top: 10px;
+    color:#3cf;
+    font-size:40px;
 }
 
 .skills-cont{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    /*If the container is large, it will create as many columns as can fit, each at least 300px wide*/
     gap:20px;
+    margin-top: 50px;
 }
 
 .sk-card {
@@ -37,16 +84,17 @@ body {
     padding:20px;
     border-radius:10px;
     transition:transform 0.3s ease;
+    
 }
 
 .sk-card:hover {
-    transform:translateY(-10px);
+    transform:translateY(-10px); /* hover karne par thoda uper ki ki or move hoga (translateY(-10px) */
 }
 
 .sk-card h2 {
     font-size:24px;
     margin-bottom:10px;
-    color:#3cf;
+    color:#f06;
 }
 
 .sk-card p {
@@ -56,7 +104,7 @@ body {
 footer{
     width:100%; 
     text-align:center;
-	background-color:#263E4C;
+    background-color:#282b38;
 	position:fixed;
 	bottom:0;
 	left:0;
@@ -71,7 +119,19 @@ footer{
   </head>
  <body>
     <section class="skills-sec">
-        <h1>My Skills</h1>
+        <div class="header">
+            <h1>MY SKILLS</h1>
+            <header class="head1">
+            <nav class = "navbar">
+               <a href="index.html" class="active">Home</a>
+              <a href="aboutme.html">About</a>
+              <a href="Skill.html">Skill</a>
+              <a href="project.html">Project</a>
+              <a href="My Resume.pdf">Resume</a>
+              <a href="contact_me.html">Contact</a>
+           </nav>  
+           </header>
+        </div>
          <div class="skills-cont">
 		       <div class="sk-card">
                  <h2>MS-Excel</h2>
